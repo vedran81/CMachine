@@ -86,7 +86,7 @@ public class TheMachine {
     public String coffeeTypesAvail() {
         String ret = "" ;
         for (int i = 0; i < recipe.length; i++) {
-            ret = ret + (i + 1) + recipe[i].getName() + ", " ;
+            ret = ret + (i + 1) + " " + recipe[i].getName() + ", " ;
         }
         return ret;
     }
@@ -95,7 +95,7 @@ public class TheMachine {
         System.out.println("What do you want to buy? " +
                 //1 - espresso, 2 - latte, 3 - cappuccino,
                 coffeeTypesAvail() +
-                " back - to main menu: ");
+                "back - to main menu: ");
         String choiceStr = scanner.nextLine();
 
         if (!choiceStr.equals("back")) {
